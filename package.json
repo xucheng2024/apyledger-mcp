@@ -1,0 +1,62 @@
+{
+  "name": "apyledger-mcp",
+  "version": "1.0.0",
+  "mcpName": "io.github.xucheng2024/apyledger",
+  "description": "MCP server for US CD rates: today's highest certificate of deposit APYs by term, deposit and state, each with the bank's own rate page and verification time; national median CD rates by term. Free, no API key.",
+  "type": "module",
+  "bin": {
+    "apyledger-mcp": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"test/*.test.ts\"",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "cd-rates",
+    "certificate-of-deposit",
+    "apy",
+    "savings",
+    "banking",
+    "credit-union",
+    "interest-rates",
+    "personal-finance",
+    "open-data"
+  ],
+  "author": "APY Ledger (https://apyledger.com)",
+  "homepage": "https://apyledger.com/data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xucheng2024/apyledger-mcp.git"
+  },
+  "bugs": "https://github.com/xucheng2024/apyledger-mcp/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3"
+  }
+}

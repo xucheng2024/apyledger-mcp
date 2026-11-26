@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.xucheng2024/apyledger",
+  "title": "APY Ledger",
+  "description": "US CD rates with each bank's source page: best APYs by term, deposit and state; median by term.",
+  "websiteUrl": "https://apyledger.com/data",
+  "repository": {
+    "url": "https://github.com/xucheng2024/apyledger-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "apyledger-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
